@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* THEME VARIABLES */
+:root {
+  --primary: #2f855a;
+  --secondary: #ecc94b;
+  --accent: #ed8936;
+  --light-bg: #f7fafc;
+  --dark-bg: #1a202c;
+  --light-text: #1a202c;
+  --dark-text: #edf2f7;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  font-family: Inter, system-ui, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.dark body {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* COMPONENTS */
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded-full text-white font-semibold transition;
+    background-color: var(--primary);
+  }
+  .btn-primary:hover {
+    background-color: var(--accent);
+  }
+
+  .card {
+    @apply bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-12;
+  }
+
+  .nav-link {
+    @apply hover:text-yellow-300 transition;
+  }
+}
+
+/* HERO */
+.hero {
+  @apply relative min-h-[85vh] flex items-center justify-center text-center text-white;
+}
+.hero img {
+  @apply absolute inset-0 w-full h-full object-cover brightness-75;
+}
+
+/* FORM */
+input {
+  @apply w-full p-3 rounded border border-gray-300 focus:ring-2 focus:ring-green-600 outline-none;
+}
