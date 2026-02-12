@@ -1,60 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Urban Harvest</title>
-  <!-- CSS -->
-<link rel="stylesheet" href="assets/main-25041a4e.css">
-
-<!-- JS -->
-<script type="module" src="assets/main-586d43d7.js"></script>
-
+  
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="/assets/main-d033161e.js"></script>
+  <link rel="stylesheet" href="/assets/main-d8a19533.css">
 </head>
+
 <body>
 
-<header class="p-6 flex justify-between items-center bg-green-700 text-white">
-  <h1 class="text-2xl font-bold">Urban Harvest</h1>
-  <nav class="space-x-5">
-    <a class="nav-link" href="index.html">Home</a>
-    <a class="nav-link" href="products.html">Products</a>
-    <a class="nav-link" href="blog.html">Community</a>
-    <a class="nav-link" href="signup.html">Subscribe</a>
-    <a class="nav-link" href="about.html">About</a>
-  </nav>
-  <button id="theme-toggle" class="btn-primary">Dark</button>
-</header>
+  <header class="p-6 flex justify-between items-center bg-green-700 text-white shadow-lg sticky top-0 z-50">
+    <h1 class="text-2xl font-bold flex items-center gap-2">
+      <span>🌱</span> Urban Harvest
+    </h1>
+    <nav class="hidden md:flex space-x-6">
+      <a class="nav-link font-medium" href="index.html">Home</a>
+      <a class="nav-link font-medium" href="products.html">Products</a>
+      <a class="nav-link font-medium" href="blog.html">Community</a>
+      <a class="nav-link font-medium" href="signup.html">Subscribe</a>
+      <a class="nav-link font-medium" href="about.html">About</a>
+    </nav>
+    <button id="theme-toggle" class="p-2 rounded-full hover:bg-green-600 transition" aria-label="Toggle Dark Mode">
+      🌙
+    </button>
+  </header>
 
-<section class="hero">
-  <img src="assets/vecteezy_top-view-hand-holding-young-plant-growing-concept-eco-and_7449166-e7eda594.jpg" alt="Urban farming">
-  <div class="relative z-10 max-w-3xl">
-    <h2 class="text-5xl font-bold mb-6">Grow Green. Live Clean.</h2>
-    <p class="text-lg mb-8">
-      Urban Harvest promotes sustainable living through eco-friendly
-      products, urban farming solutions, and community education.
-    </p>
-    <a href="products.html" class="btn-primary">Explore Products</a>
-  </div>
-</section>
+  <section class="hero relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+    <img src="/assets/vecteezy_top-view-hand-holding-young-plant-growing-concept-eco-and_7449166-e7eda594-e7eda594.jpg"
+      alt="Urban farming" class="absolute inset-0 w-full h-full object-cover -z-10">
 
-<section class="p-16 grid md:grid-cols-3 gap-10">
-  <div class="card text-center">
-    <h3 class="text-xl font-bold mb-3">Sustainable Products</h3>
-    <p>Plastic-free and reusable essentials for everyday life.</p>
-  </div>
-  <div class="card text-center">
-    <h3 class="text-xl font-bold mb-3">Community Impact</h3>
-    <p>Workshops and knowledge-sharing for urban residents.</p>
-  </div>
-  <div class="card text-center">
-    <h3 class="text-xl font-bold mb-3">Eco Education</h3>
-    <p>Blogs and guides to reduce waste and carbon footprint.</p>
-  </div>
-</section>
+    <div class="relative z-10 max-w-4xl px-6 animate-fade-in-up">
+      <h2 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+        Grow Green. <br> <span class="text-green-400">Live Clean.</span>
+      </h2>
+      <p class="text-xl md:text-2xl mb-10 text-gray-100 max-w-2xl mx-auto">
+        Empowering urban communities with sustainable products, farming solutions, and education for a greener tomorrow.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="products.html"
+          class="btn-primary text-lg px-8 py-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transform transition">
+          Shop Sustainable
+        </a>
+        <a href="about.html"
+          class="px-8 py-4 rounded-full bg-white text-green-800 font-bold hover:bg-gray-100 transition shadow-xl">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
 
-<footer class="bg-green-800 text-white text-center p-6">
-  © 2026 Urban Harvest. All rights reserved.
-</footer>
+  <section class="py-20 px-6 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-title text-center text-gray-800 dark:text-white mb-16">Our Featured Services</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="card hover:-translate-y-2 duration-300">
+          <div class="text-5xl mb-6 text-center">🛍️</div>
+          <h3 class="text-2xl font-bold mb-3 text-center text-gray-800 dark:text-white">Eco Shop</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Curated collection of plastic-free, biodegradable, and reusable essentials for your daily life.
+          </p>
+        </div>
+        <div class="card hover:-translate-y-2 duration-300">
+          <div class="text-5xl mb-6 text-center">🏡</div>
+          <h3 class="text-2xl font-bold mb-3 text-center text-gray-800 dark:text-white">Urban Farming</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Expert consultation and setup for balcony gardens, rooftop farms, and community green spaces.
+          </p>
+        </div>
+        <div class="card hover:-translate-y-2 duration-300">
+          <div class="text-5xl mb-6 text-center">📚</div>
+          <h3 class="text-2xl font-bold mb-3 text-center text-gray-800 dark:text-white">Education</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Workshops, guides, and mentorship programs to help you master sustainable living skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="src/main.js"></script>
+  <footer class="bg-green-900 text-white text-center py-10">
+    <p class="mb-4 text-green-200">© 2026 Urban Harvest. Cultivating a better future.</p>
+    <div class="flex justify-center space-x-6 text-2xl">
+      <a href="#" class="hover:text-green-400 transition">Instagram</a>
+      <a href="#" class="hover:text-green-400 transition">Twitter</a>
+      <a href="#" class="hover:text-green-400 transition">Facebook</a>
+    </div>
+  </footer>
+
+  
 </body>
+
 </html>
