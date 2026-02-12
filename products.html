@@ -7,8 +7,8 @@
   <title>Products | Urban Harvest</title>
   
   <script type="module" crossorigin src="/Urban_harvests-/assets/modulepreload-polyfill-3cfb730f.js"></script>
-  <script type="module" crossorigin src="/Urban_harvests-/assets/main-d033161e.js"></script>
-  <link rel="stylesheet" href="/Urban_harvests-/assets/main-d8a19533.css">
+  <script type="module" crossorigin src="/Urban_harvests-/assets/main-5dd83e23.js"></script>
+  <link rel="stylesheet" href="/Urban_harvests-/assets/main-d5d2511f.css">
 </head>
 
 <body>
@@ -24,10 +24,26 @@
       <a class="nav-link font-medium" href="signup.html">Subscribe</a>
       <a class="nav-link font-medium" href="about.html">About</a>
     </nav>
-    <button id="theme-toggle" class="p-2 rounded-full hover:bg-green-600 transition" aria-label="Toggle Dark Mode">
-      🌙
-    </button>
+    <div class="flex items-center gap-4">
+      <button id="theme-toggle" class="p-2 rounded-full hover:bg-green-600 transition" aria-label="Toggle Dark Mode">
+        🌙
+      </button>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-2xl focus:outline-none" aria-label="Open Menu">
+        ☰
+      </button>
+    </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu"
+    class="fixed inset-0 bg-green-800 z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8 text-2xl">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-4xl text-white">&times;</button>
+    <a class="nav-link text-white font-bold" href="index.html">Home</a>
+    <a class="nav-link text-white font-bold" href="products.html">Products</a>
+    <a class="nav-link text-white font-bold" href="blog.html">Community</a>
+    <a class="nav-link text-white font-bold" href="signup.html">Subscribe</a>
+    <a class="nav-link text-white font-bold" href="about.html">About</a>
+  </div>
 
   <section class="py-16 px-6 max-w-7xl mx-auto">
     <div class="text-center mb-16">
@@ -42,7 +58,7 @@
       <!-- Product 1 -->
       <div class="card group overflow-hidden">
         <div class="overflow-hidden rounded-t-lg">
-          <img src="/Urban_harvests-/assets/eco 2-c4da393f-c4da393f.jpg"
+          <img src="/Urban_harvests-/assets/eco 2-c4da393f-c4da393f.jpg" loading="lazy"
             class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="Reusable Cotton Bag">
         </div>
         <div class="p-6">
@@ -60,7 +76,7 @@
       <!-- Product 2 -->
       <div class="card group overflow-hidden">
         <div class="overflow-hidden rounded-t-lg">
-          <img src="/Urban_harvests-/assets/bamboo straw-83750a40-83750a40.jpg"
+          <img src="/Urban_harvests-/assets/bamboo straw-83750a40-83750a40.jpg" loading="lazy"
             class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="Bamboo Straws">
         </div>
         <div class="p-6">
@@ -78,7 +94,7 @@
       <!-- Product 3 -->
       <div class="card group overflow-hidden">
         <div class="overflow-hidden rounded-t-lg">
-          <img src="/Urban_harvests-/assets/tcw-5310-0629148c-0629148c.jpg"
+          <img src="/Urban_harvests-/assets/tcw-5310-0629148c-0629148c.jpg" loading="lazy"
             class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="Compost Bin">
         </div>
         <div class="p-6">
@@ -96,7 +112,7 @@
       <!-- Product 4 -->
       <div class="card group overflow-hidden">
         <div class="overflow-hidden rounded-t-lg">
-          <img src="/Urban_harvests-/assets/beewax-c5f6b863-c5f6b863.jpg"
+          <img src="/Urban_harvests-/assets/beewax-c5f6b863-c5f6b863.jpg" loading="lazy"
             class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="Beeswax Wraps">
         </div>
         <div class="p-6">
@@ -114,7 +130,7 @@
       <!-- Product 5 -->
       <div class="card group overflow-hidden">
         <div class="overflow-hidden rounded-t-lg">
-          <img src="/Urban_harvests-/assets/steel lunch-be6a085e-be6a085e.jpg"
+          <img src="/Urban_harvests-/assets/steel lunch-be6a085e-be6a085e.jpg" loading="lazy"
             class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="Steel Lunch Box">
         </div>
         <div class="p-6">
@@ -132,7 +148,7 @@
       <!-- Product 6 -->
       <div class="card group overflow-hidden">
         <div class="overflow-hidden rounded-t-lg">
-          <img src="/Urban_harvests-/assets/kit-3ba07e43-3ba07e43.jpg"
+          <img src="/Urban_harvests-/assets/kit-3ba07e43-3ba07e43.jpg" loading="lazy"
             class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="Herb Planter">
         </div>
         <div class="p-6">

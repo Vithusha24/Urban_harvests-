@@ -7,8 +7,8 @@
   <title>Subscribe | Urban Harvest</title>
   
   <script type="module" crossorigin src="/Urban_harvests-/assets/modulepreload-polyfill-3cfb730f.js"></script>
-  <script type="module" crossorigin src="/Urban_harvests-/assets/main-d033161e.js"></script>
-  <link rel="stylesheet" href="/Urban_harvests-/assets/main-d8a19533.css">
+  <script type="module" crossorigin src="/Urban_harvests-/assets/main-5dd83e23.js"></script>
+  <link rel="stylesheet" href="/Urban_harvests-/assets/main-d5d2511f.css">
 </head>
 
 <body>
@@ -24,10 +24,26 @@
       <a class="nav-link font-medium" href="signup.html">Subscribe</a>
       <a class="nav-link font-medium" href="about.html">About</a>
     </nav>
-    <button id="theme-toggle" class="p-2 rounded-full hover:bg-green-600 transition" aria-label="Toggle Dark Mode">
-      🌙
-    </button>
+    <div class="flex items-center gap-4">
+      <button id="theme-toggle" class="p-2 rounded-full hover:bg-green-600 transition" aria-label="Toggle Dark Mode">
+        🌙
+      </button>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-2xl focus:outline-none" aria-label="Open Menu">
+        ☰
+      </button>
+    </div>
   </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu"
+    class="fixed inset-0 bg-green-800 z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8 text-2xl">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-4xl text-white">&times;</button>
+    <a class="nav-link text-white font-bold" href="index.html">Home</a>
+    <a class="nav-link text-white font-bold" href="products.html">Products</a>
+    <a class="nav-link text-white font-bold" href="blog.html">Community</a>
+    <a class="nav-link text-white font-bold" href="signup.html">Subscribe</a>
+    <a class="nav-link text-white font-bold" href="about.html">About</a>
+  </div>
 
   <section
     class="min-h-screen flex items-center justify-center py-16 px-6 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
@@ -36,7 +52,7 @@
       <!-- Image Side -->
       <div class="hidden md:block relative">
         <img src="/Urban_harvests-/assets/vecteezy_top-view-hand-holding-young-plant-growing-concept-eco-and_7449166-e7eda594-e7eda594.jpg"
-          alt="Join us" class="absolute inset-0 w-full h-full object-cover">
+          loading="lazy" alt="Join us" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 bg-green-900/40 flex items-center justify-center p-8 text-center text-white">
           <div>
             <h3 class="text-3xl font-bold mb-4">Be Part of the Change</h3>
