@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Urban Harvest</title>
-  
-<!-- CSS -->
-<link rel="stylesheet" href="assets/main-25041a4e.css">
-
-<!-- JS -->
-<script type="module" src="assets/main-586d43d7.js"></script>
-
-
+  <link rel="stylesheet" href="src/styles.css">
 </head>
+
 <body>
 
-<header class="p-6 flex justify-between items-center bg-green-700 text-white">
-  <h1 class="text-2xl font-bold">Urban Harvest</h1>
-  <nav class="space-x-5">
-    <a class="nav-link" href="index.html">Home</a>
-    <a class="nav-link" href="products.html">Products</a>
-    <a class="nav-link" href="blog.html">Community</a>
-    <a class="nav-link" href="signup.html">Subscribe</a>
-    <a class="nav-link" href="about.html">About</a>
-  </nav>
-</header>
+  <header class="p-6 flex justify-between items-center bg-green-700 text-white shadow-lg sticky top-0 z-50">
+    <h1 class="text-2xl font-bold flex items-center gap-2">
+      <span>🌱</span> Urban Harvest
+    </h1>
+    <nav class="hidden md:flex space-x-6">
+      <a class="nav-link font-medium" href="index.html">Home</a>
+      <a class="nav-link font-medium" href="products.html">Products</a>
+      <a class="nav-link font-medium" href="blog.html">Community</a>
+      <a class="nav-link font-medium" href="signup.html">Subscribe</a>
+      <a class="nav-link font-medium" href="about.html">About</a>
+    </nav>
+    <button id="theme-toggle" class="p-2 rounded-full hover:bg-green-600 transition" aria-label="Toggle Dark Mode">
+      🌙
+    </button>
+  </header>
 
-<section class="p-16 max-w-5xl mx-auto">
-  <h2 class="section-title">Our Mission & Impact</h2>
-
-  <p class="text-center mb-12">
-    Urban Harvest was created to help urban communities adopt environmentally responsible lifestyles through sustainable products, education, and ethical sourcing. We believe that small, mindful choices can create a big difference for the planet, and we aim to make eco-friendly living accessible, practical, and inspiring for everyone.
-  </p>
-
-  <div class="grid md:grid-cols-3 gap-8 text-center">
-    <div class="card">
-      <h3 class="text-3xl font-bold text-green-600">8,000+</h3>
-      <p class="mt-2">Eco products sold – from reusable bags and bamboo straws to compost bins and plant kits, our products help reduce reliance on single-use plastics and promote sustainable habits.</p>
-    </div>
-
-    <div class="card">
-      <h3 class="text-3xl font-bold text-green-600">3 Tons</h3>
-      <p class="mt-2">Plastic waste reduced – by choosing our products, our community has collectively kept tons of plastic out of landfills and oceans, helping protect wildlife and reduce pollution.</p>
-    </div>
-
-    <div class="card">
-      <h3 class="text-3xl font-bold text-green-600">500+</h3>
-      <p class="mt-2">Community members educated – through workshops, events, and online resources, we empower individuals to make informed, sustainable choices in their daily lives.</p>
-    </div>
+  <div class="bg-green-800 py-16 text-center text-white">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Mission & Impact</h2>
+    <p class="text-xl max-w-3xl mx-auto px-6 opacity-90">
+      Empowering communities to live sustainably.
+    </p>
   </div>
-</section>
 
-<p class="text-center mb-12">
-    We carefully select products that are ethically sourced, eco-friendly, and built to last. Sustainability is not just about products – it’s about creating a culture of mindful living. From our educational campaigns to community programs, we strive to inspire change at every level.
-  </p>
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-xl leading-relaxed text-gray-700 dark:text-gray-300">
+        Urban Harvest was created to help urban communities adopt environmentally responsible lifestyles through
+        sustainable products, education, and ethical sourcing. We believe that small, mindful choices can create a big
+        difference for the planet, and we aim to make eco-friendly living accessible, practical, and inspiring for
+        everyone.
+      </p>
+    </div>
 
+    <div class="grid md:grid-cols-3 gap-8 text-center mb-20">
+      <div class="card p-8 hover:-translate-y-2 transition duration-300 border-t-4 border-green-500">
+        <div class="text-4xl mb-4">🛍️</div>
+        <h3 class="text-4xl font-extrabold text-green-600 mb-2">8,000+</h3>
+        <p class="text-gray-600 dark:text-gray-300 font-medium">Eco Products Sold</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Replace single-use items with sustainable alternatives.
+        </p>
+      </div>
 
-<footer class="bg-green-800 text-white text-center p-6">
-  © 2026 Urban Harvest
-</footer>
+      <div class="card p-8 hover:-translate-y-2 transition duration-300 border-t-4 border-blue-500">
+        <div class="text-4xl mb-4">🌊</div>
+        <h3 class="text-4xl font-extrabold text-blue-600 mb-2">3 Tons</h3>
+        <p class="text-gray-600 dark:text-gray-300 font-medium">Plastic Waste Reduced</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">kept out of landfills and oceans ensuring a cleaner
+          planet.</p>
+      </div>
 
+      <div class="card p-8 hover:-translate-y-2 transition duration-300 border-t-4 border-yellow-500">
+        <div class="text-4xl mb-4">🎓</div>
+        <h3 class="text-4xl font-extrabold text-yellow-600 mb-2">500+</h3>
+        <p class="text-gray-600 dark:text-gray-300 font-medium">Community Members</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Educated through workshops, events, and resources.</p>
+      </div>
+    </div>
 
+    <div class="bg-green-50 dark:bg-green-900/30 rounded-2xl p-10 md:p-16 text-center">
+      <h3 class="text-3xl font-bold mb-6 text-green-800 dark:text-green-300">Why It Matters</h3>
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+        We carefully select products that are ethically sourced, eco-friendly, and built to last. Sustainability is not
+        just about products – it’s about creating a culture of mindful living. From our educational campaigns to
+        community programs, we strive to inspire change at every level.
+      </p>
+      <a href="signup.html" class="btn-primary text-lg px-8 py-3 shadow-lg">Join Our Mission</a>
+    </div>
+  </section>
+
+  <footer class="bg-green-900 text-white text-center py-8">
+    <p>© 2026 Urban Harvest. Empowering communities.</p>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
 </body>
+
 </html>

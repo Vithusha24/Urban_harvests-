@@ -5,19 +5,23 @@
 /* THEME VARIABLES */
 :root {
   --primary: #2f855a;
+  --primary-hover: #276749;
   --secondary: #ecc94b;
   --accent: #ed8936;
   --light-bg: #f7fafc;
   --dark-bg: #1a202c;
-  --light-text: #1a202c;
-  --dark-text: #edf2f7;
+  --card-light: #ffffff;
+  --card-dark: #2d3748;
+  --light-text: #2d3748;
+  --dark-text: #f7fafc;
 }
 
 body {
   background-color: var(--light-bg);
   color: var(--light-text);
-  font-family: Inter, system-ui, sans-serif;
-  transition: all 0.3s ease;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
 }
 
 .dark body {
