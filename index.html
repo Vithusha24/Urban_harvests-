@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban Harvest</title>
-  <link rel="stylesheet" href="src/styles.css">
+  
+  <script type="module" crossorigin src="/Urban_harvests-/assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="/Urban_harvests-/assets/main-5dd83e23.js"></script>
+  <link rel="stylesheet" href="/Urban_harvests-/assets/main-d5d2511f.css">
 </head>
 
 <body>
@@ -42,253 +45,59 @@
     <a class="nav-link text-white font-bold" href="about.html">About</a>
   </div>
 
-  <main id="main-content">
-    <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center justify-center text-center text-white overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 z-0"></div>
-      <!-- Use existing image or placeholder if needed, ensured path is correct relative to root -->
-      <img src="assets/vecteezy_top-view-hand-holding-young-plant-growing-concept-eco-and_7449166-e7eda594.jpg"
-        alt="Hands holding a young plant representing growth and sustainability"
-        class="absolute inset-0 w-full h-full object-cover -z-10 animate-fade-in-up">
+  <section class="hero relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+    <img src="/Urban_harvests-/assets/vecteezy_top-view-hand-holding-young-plant-growing-concept-eco-and_7449166-e7eda594-e7eda594.jpg"
+      alt="Urban farming" class="absolute inset-0 w-full h-full object-cover -z-10">
 
-      <div class="relative z-10 max-w-5xl px-6">
-        <span
-          class="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-400 text-green-300 text-sm font-semibold mb-6 backdrop-blur-sm animate-fade-in-up">
-          Sustainable Living for Everyone
-        </span>
-        <h2
-          class="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 tracking-tight leading-none shadow-black drop-shadow-lg">
-          Grow Green. <br> <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-300">Live Clean.</span>
-        </h2>
-        <p class="text-xl md:text-2xl mb-10 text-gray-100 max-w-2xl mx-auto font-light leading-relaxed text-shadow">
-          Empowering urban communities with sustainable products, farming solutions, and education for a greener
-          tomorrow.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="products.html"
-            class="btn-primary transform hover:scale-105 transition-transform duration-300 shadow-xl ring-purple-500">
-            Shop Sustainable
-          </a>
-          <a href="about.html"
-            class="px-8 py-3 rounded-md bg-white/10 backdrop-blur-md border border-white/30 text-white font-medium hover:bg-white/20 transition-all shadow-lg">
-            Our Mission
-          </a>
+    <div class="relative z-10 max-w-4xl px-6 animate-fade-in-up">
+      <h2 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+        Grow Green. <br> <span class="text-green-400">Live Clean.</span>
+      </h2>
+      <p class="text-xl md:text-2xl mb-10 text-gray-100 max-w-2xl mx-auto">
+        Empowering urban communities with sustainable products, farming solutions, and education for a greener tomorrow.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="products.html"
+          class="btn-primary text-lg px-8 py-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transform transition">
+          Shop Sustainable
+        </a>
+        <a href="about.html"
+          class="px-8 py-4 rounded-full bg-white text-green-800 font-bold hover:bg-gray-100 transition shadow-xl">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-title text-center text-gray-800 dark:text-white mb-16">Our Featured Services</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="card hover:-translate-y-2 duration-300">
+          <div class="text-5xl mb-6 text-center">🛍️</div>
+          <h3 class="text-2xl font-bold mb-3 text-center text-gray-800 dark:text-white">Eco Shop</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Curated collection of plastic-free, biodegradable, and reusable essentials for your daily life.
+          </p>
+        </div>
+        <div class="card hover:-translate-y-2 duration-300">
+          <div class="text-5xl mb-6 text-center">🏡</div>
+          <h3 class="text-2xl font-bold mb-3 text-center text-gray-800 dark:text-white">Urban Farming</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Expert consultation and setup for balcony gardens, rooftop farms, and community green spaces.
+          </p>
+        </div>
+        <div class="card hover:-translate-y-2 duration-300">
+          <div class="text-5xl mb-6 text-center">📚</div>
+          <h3 class="text-2xl font-bold mb-3 text-center text-gray-800 dark:text-white">Education</h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Workshops, guides, and mentorship programs to help you master sustainable living skills.
+          </p>
         </div>
       </div>
-
-      <!-- Scroll Indicator -->
-      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <svg class="w-8 h-8 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
-      </div>
-    </section>
-
-    <!-- Services / Features Section -->
-    <section class="py-24 px-6 bg-lightbg dark:bg-darkbg transition-colors duration-300">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-20">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Our Core Offerings</h2>
-          <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">We provide everything you need to start
-            your sustainable journey.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-10">
-          <!-- Card 1 -->
-          <article class="card group hover:scale-[1.02] transition-transform duration-300">
-            <div class="h-48 overflow-hidden bg-green-50 dark:bg-green-900/20 relative">
-              <div
-                class="absolute inset-0 flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-500">
-                🛍️</div>
-            </div>
-            <div class="card-body text-center">
-              <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Eco Shop</h3>
-              <p class="text-gray-600 dark:text-gray-300 mb-6">
-                Curated collection of plastic-free, biodegradable, and reusable essentials.
-              </p>
-              <a href="products.html"
-                class="text-primary font-semibold hover:text-primary-dark inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                Browse Products <span>&rarr;</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="card group hover:scale-[1.02] transition-transform duration-300">
-            <div class="h-48 overflow-hidden bg-yellow-50 dark:bg-yellow-900/20 relative">
-              <div
-                class="absolute inset-0 flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-500">
-                🏡</div>
-            </div>
-            <div class="card-body text-center">
-              <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Urban Farming</h3>
-              <p class="text-gray-600 dark:text-gray-300 mb-6">
-                Expert consultation for balcony gardens, rooftop farms, and green spaces.
-              </p>
-              <a href="#"
-                class="text-secondary-dark font-semibold hover:text-secondary inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                Get Started <span>&rarr;</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="card group hover:scale-[1.02] transition-transform duration-300">
-            <div class="h-48 overflow-hidden bg-blue-50 dark:bg-blue-900/20 relative">
-              <div
-                class="absolute inset-0 flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-500">
-                📚</div>
-            </div>
-            <div class="card-body text-center">
-              <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Education</h3>
-              <p class="text-gray-600 dark:text-gray-300 mb-6">
-                Workshops, guides, and mentorship programs to master sustainable living.
-              </p>
-              <a href="blog.html"
-                class="text-accent font-semibold hover:text-orange-600 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                Learn More <span>&rarr;</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Impact & Testimonials Carousel (Interactive Component 1) -->
-    <section class="py-24 bg-primary-dark text-white overflow-hidden relative">
-      <div class="absolute inset-0 opacity-10 bg-[url('assets/pattern.png')]"></div> <!-- Optional pattern -->
-      <div class="max-w-6xl mx-auto px-6 relative z-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Creating Real Impact</h2>
-
-        <!-- Carousel Container -->
-        <div class="relative max-w-4xl mx-auto" id="testimonial-carousel">
-          <!-- Slides Wrapper -->
-          <div
-            class="overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl min-h-[300px] flex items-center">
-
-            <div class="carousel-track flex transition-transform duration-500 ease-out w-full" id="carousel-track">
-              <!-- Slide 1 -->
-              <div class="carousel-slide w-full flex-shrink-0 p-10 flex flex-col items-center text-center">
-                <div class="text-5xl mb-6 text-secondary">❝</div>
-                <p class="text-xl md:text-2xl font-light italic mb-6">"Urban Harvest completely transformed my small
-                  balcony into a thriving vegetable garden. I've never felt more connected to my food."</p>
-                <div class="font-bold text-lg">Sarah Jenkins</div>
-                <div class="text-sm text-gray-300">Community Member since 2024</div>
-              </div>
-
-              <!-- Slide 2 -->
-              <div class="carousel-slide w-full flex-shrink-0 p-10 flex flex-col items-center text-center">
-                <div class="text-5xl mb-6 text-secondary">❝</div>
-                <p class="text-xl md:text-2xl font-light italic mb-6">"The plastic-free starter kit was the easiest
-                  switch I've ever made. High quality, affordable, and zero waste!"</p>
-                <div class="font-bold text-lg">Michael Ross</div>
-                <div class="text-sm text-gray-300">Eco Shop Customer</div>
-              </div>
-
-              <!-- Slide 3 -->
-              <div class="carousel-slide w-full flex-shrink-0 p-10 flex flex-col items-center text-center">
-                <div class="text-5xl mb-6 text-secondary">❝</div>
-                <p class="text-xl md:text-2xl font-light italic mb-6">"Their workshops are incredibly informative. I
-                  learned how to compost in my apartment without any smell!"</p>
-                <div class="font-bold text-lg">Elena Rodriguez</div>
-                <div class="text-sm text-gray-300">Workshop Attendee</div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Controls -->
-          <button id="prev-slide"
-            class="absolute top-1/2 -left-4 md:-left-12 transform -translate-y-1/2 p-3 rounded-full bg-white text-primary hover:bg-secondary transition shadow-lg z-20"
-            aria-label="Previous Slide">
-            &#10094;
-          </button>
-          <button id="next-slide"
-            class="absolute top-1/2 -right-4 md:-right-12 transform -translate-y-1/2 p-3 rounded-full bg-white text-primary hover:bg-secondary transition shadow-lg z-20"
-            aria-label="Next Slide">
-            &#10095;
-          </button>
-
-          <!-- Indicators -->
-          <div class="flex justify-center gap-3 mt-8" id="carousel-dots">
-            <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition"
-              aria-label="Go to slide 1"></button>
-            <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition"
-              aria-label="Go to slide 2"></button>
-            <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition"
-              aria-label="Go to slide 3"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Preview Section -->
-    <section class="py-24 px-6 bg-white dark:bg-gray-900 transition-colors duration-300">
-      <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-          <div>
-            <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">From the Community</h2>
-            <p class="text-gray-600 dark:text-gray-400">Latest tips, recipes, and success stories.</p>
-          </div>
-          <a href="blog.html"
-            class="hidden md:inline-flex text-primary font-semibold hover:text-primary-dark items-center gap-1 transition">View
-            all posts &rarr;</a>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Post 1 -->
-          <article class="group cursor-pointer">
-            <div class="rounded-xl overflow-hidden mb-4 shadow-soft">
-              <img src="https://media.istockphoto.com/id/164666590/photo/roof-terrace.jpg?s=612x612&w=0&k=20&c=WKF9eZ_Tj2G5lFqxpuYsEZ4b5d7jS7OUVQ3zyXFeCtw="
-                alt="Balcony Garden"
-                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
-              <span class="px-2 py-1 rounded bg-green-100 text-green-800 text-xs font-bold">Tips</span>
-              <span>• 5 min read</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition">Top 5 Plants
-              for Low-Light Apartments</h3>
-          </article>
-
-          <!-- Post 2 -->
-          <article class="group cursor-pointer">
-            <div class="rounded-xl overflow-hidden mb-4 shadow-soft">
-              <img src="https://img.freepik.com/free-vector/hand-drawn-flat-compost-cycle_23-2149370342.jpg?semt=ais_user_personalization&w=740&q=80"
-                alt="Composting Guide"
-                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
-              <span class="px-2 py-1 rounded bg-orange-100 text-orange-800 text-xs font-bold">Guide</span>
-              <span>• 8 min read</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition">Composting
-              101: Zero Waste Living</h3>
-          </article>
-
-          <!-- Post 3 -->
-          <article class="group cursor-pointer">
-            <div class="rounded-xl overflow-hidden mb-4 shadow-soft">
-              <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80&w=800"
-                alt="Healthy Recipe"
-                class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
-              <span class="px-2 py-1 rounded bg-purple-100 text-purple-800 text-xs font-bold">Recipes</span>
-              <span>• 4 min read</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition">Seasonal
-              Harvest Salad Recipe</h3>
-          </article>
-        </div>
-
-        <div class="mt-8 text-center md:hidden">
-          <a href="blog.html" class="btn-outline w-full justify-center">View all posts</a>
-        </div>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer class="bg-green-900 text-white text-center py-10">
     <p class="mb-4 text-green-200">© 2026 Urban Harvest. Cultivating a better future.</p>
@@ -299,7 +108,7 @@
     </div>
   </footer>
 
-  <script type="module" src="src/main.js"></script>
+  
 </body>
 
 </html>
