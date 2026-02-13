@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite'
 
-export default defineConfig({
+const { defineConfig } = require('vite')
+
+module.exports = defineConfig({
   base: '/Urban_harvests-/',
   build: {
     rollupOptions: {
@@ -15,3 +16,4 @@ export default defineConfig({
     }
   }
 })
+
